@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"ping_testbench\startup_stm32f407xx.o"
+"ping_testbench\ping_driver.o"
+"ping_testbench\dwt_delay.o"
+"ping_testbench\main.o"
+"ping_testbench\stm32f4xx_it.o"
+"ping_testbench\stm32f4xx_hal_msp.o"
+"ping_testbench\stm32f4xx_hal_tim.o"
+"ping_testbench\stm32f4xx_hal_tim_ex.o"
+"ping_testbench\stm32f4xx_hal_rcc.o"
+"ping_testbench\stm32f4xx_hal_rcc_ex.o"
+"ping_testbench\stm32f4xx_hal_flash.o"
+"ping_testbench\stm32f4xx_hal_flash_ex.o"
+"ping_testbench\stm32f4xx_hal_flash_ramfunc.o"
+"ping_testbench\stm32f4xx_hal_gpio.o"
+"ping_testbench\stm32f4xx_hal_dma_ex.o"
+"ping_testbench\stm32f4xx_hal_dma.o"
+"ping_testbench\stm32f4xx_hal_pwr.o"
+"ping_testbench\stm32f4xx_hal_pwr_ex.o"
+"ping_testbench\stm32f4xx_hal_cortex.o"
+"ping_testbench\stm32f4xx_hal.o"
+"ping_testbench\stm32f4xx_hal_exti.o"
+"ping_testbench\system_stm32f4xx.o"
+--strict --scatter "PING_TestBench\PING_TestBench.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PING_TestBench.map" -o PING_TestBench\PING_TestBench.axf
